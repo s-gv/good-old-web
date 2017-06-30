@@ -1,1 +1,58 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Good Old Web</title>
+        <style>
+        .nav {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .content {
+            max-width: 40em;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            line-height: 1.58;
+            margin-bottom: 50px;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link, .nav a, .nav a:visited {
+            color: #07C;
+        }
+        a:hover, a:active, .nav a:visited:active, .nav a:visited:hover {
+            color: #3af;
+        }
+        a:visited {
+            color: #005999;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="/">home</a> &middot;
+            <a href="mailto:me@sagargv.com">contact</a> &middot;
+        </div>
+        <div class="content">
+            <h1>Good Old Web</h1>
+            <p>Good Old Web is a collection of slim, open-source webapps that make minimal use of Web 2.0 features like AJAX. The rendered pages are light-weight and work even if javascript is disabled. This is an attempt to fight the <a href="http://idlewords.com/talks/website_obesity.htm">website obesity crisis</a> and reduce <a href="https://danluu.com/web-bloat/">web bloat</a>.</p>
+            <h2>Orange Forum</h2>
+            <p><a href="https://github.com/s-gv/orangeforum">Orange Forum</a> is an easy to deploy forum that uses no javascript and has few dependencies. It is written is golang and a statically <a href="https://github.com/s-gv/orangeforum/releases">compiled binary</a> is available for Linux. By default, sqlite is used, so you can download and start the server with:</p>
+            <pre>./orangeforum --migrate &amp;&amp; ./orangeforum --createsuperuser</pre>
+            <pre>./orangeforum</pre>
+    </body>
+</html>
