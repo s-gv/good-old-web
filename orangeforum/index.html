@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Good Old Web</title>
-        <meta name="description" content="A collection of open-source, slim webapps that make very little use of javascript.">
+        <meta name="description" content="Orange Forum is an open-source, easy to deploy forum written in golang.">
         <style>
         .content {
             max-width: 40em;
-            margin: 25px auto;
+            margin: 10px auto 25px auto;
             padding: 0 10px;
         }
         body {
@@ -36,35 +36,36 @@
         a:visited {
             color: #005999;
         }
-        h2 a, h2 a:link, h2 a:hover, h2 a:active, h2 a:visited {
-            color: black;
-        }
         </style>
     </head>
     <body>
         <div class="content">
-            <h1>Good Old Web</h1>
+            <a href="/">Good Old Web</a> &gt; Orangeforum
+            <hr>
+            <h1>Orange Forum</h1>
             <p>
-                Good Old Web is a collection of open-source, slim webapps that make very little use of
-                javascript. The rendered pages are light-weight
-                and work even if javascript is disabled. This is an attempt to combat the 
-                <a href="http://idlewords.com/talks/website_obesity.htm">website obesity crisis</a>
-                and reduce <a href="https://danluu.com/web-bloat/">web bloat</a>. Please contact
-                <a href="mailto:info@goodoldweb.com">info@goodoldweb.com</a> if you have any questions 
-                or want support / hosting.
-            </p>
-            <h2><a href="/orangeforum/">Orange Forum</a></h2>
-            <p>
-                <a href="/orangeforum/">Orange Forum</a> is an easy to deploy
+                <a href="https://github.com/s-gv/orangeforum">Orange Forum</a> is an easy to deploy
                 forum that has few dependencies. It is written in golang and a
                 <a href="https://github.com/s-gv/orangeforum/releases">compiled binary</a> is available
                 for linux. Try the live demo hosted <a href="https://groups.goodoldweb.com">here</a>.
             </p>
-            <h2><a href="/femtowiki/">Femtowiki</a></h2>
             <p>
-                <a href="/femtowiki/">Femtowiki</a> is a tiny wiki written in golang to create wiki pages using markdown.
-                The compiled binary for Linux is <a href="https://github.com/s-gv/femtowiki/releases">here</a>.
-                Try the live demo <a href="https://wiki.goodoldweb.com">here</a>.
+                By default, sqlite is used, so it's easy to get started. 
+                <a href="https://github.com/s-gv/orangeforum/releases">Download</a> the binary and 
+                migrate the database with:
+            </p>
+            <pre>./orangeforum -migrate</pre>
+            <p>
+                Create a superadmin:
+            </p>
+            <pre>./orangeforum -createsuperuser</pre>
+            <p>
+                Finally, start the server:
+            </p>
+            <pre>./orangeforum</pre>
+            <p>
+                More details about configuration and command line options are
+                <a href="https://github.com/s-gv/orangeforum">here</a>.
             </p>
         </div>
     </body>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Good Old Web</title>
+        <meta name="description" content="Femtowiki is a tiny wiki written in golang to create wiki pages using markdown.">
+        <style>
+        .content {
+            max-width: 40em;
+            margin: 10px auto 25px auto;
+            padding: 0 10px;
+        }
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            line-height: 1.58;
+            margin-bottom: 50px;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link, .nav a, .nav a:visited {
+            color: #07C;
+        }
+        a:hover, a:active, .nav a:visited:active, .nav a:visited:hover {
+            color: #3af;
+        }
+        a:visited {
+            color: #005999;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <a href="/">Good Old Web</a> &gt; Femtowiki
+            <hr>
+            <h1>Femtowiki</h1>
+            <p>
+                Femtowiki is a tiny wiki written in golang to create wiki pages using markdown.
+                The compiled binary for Linux is <a href="https://github.com/s-gv/femtowiki/releases">here</a>.
+                Try the live demo hosted <a href="https://wiki.goodoldweb.com">here</a>.
+            </p>
+            <p>
+                SQLite and Postgres are supported by Femtowiki.
+                To get started, <a href="https://github.com/s-gv/femtowiki/releases">download</a>
+                the binary and migrate the database (by default, sqlite is used):
+            </p>
+            <pre>./femtowiki -migrate</pre>
+             <p>
+                Create an admin user:
+            </p>
+            <pre>./femtowiki -createsuperuser</pre>
+            <p>
+                Finally, start the server:
+            </p>
+            <pre>./femtowiki</pre>
+            <p>
+                The <a href="https://github.com/s-gv/femtowiki">README</a> has more details on 
+                configuration and command line options.
+            </p>
+        </div>
+    </body>
+</html>
